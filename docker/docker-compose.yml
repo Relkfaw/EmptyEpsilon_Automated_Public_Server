@@ -1,0 +1,12 @@
+version: '3.7'
+
+services:
+  emptyepsilon:
+    build: .
+    restart: on-failure
+    expose:
+      - "8888"
+      - "35666"
+    ports:
+      - 33501:35666
+      - 33502:8888
